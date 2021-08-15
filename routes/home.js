@@ -17,10 +17,6 @@ const router = express.Router();
 //   res.render("home", { siderItemList, active });
 // });
 
-router.get("/", function (req, res, next) {
-  res.send("google7d0f138ca80fb975.html");
-});
-
 router.get("/:routerId", function (req, res, next) {
   let routerId = req.params?.routerId;
 
