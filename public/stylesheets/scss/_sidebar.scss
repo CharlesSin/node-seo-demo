@@ -1,0 +1,87 @@
+@import "colors";
+
+.sidebar {
+  width: 345px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: $main;
+  z-index: 100;
+  transition: width 300ms;
+
+  &-brand {
+    height: 90px;
+    padding: 1rem 0rem 1rem 2rem;
+    color: $pure-white;
+  }
+
+  &-brand span {
+    display: inline-block;
+    padding-right: 1rem;
+  }
+
+  &-menu {
+    margin-top: 1rem;
+  }
+
+  &-menu li {
+    width: 100%;
+    margin-bottom: 1.7rem;
+    padding-left: 1rem;
+  }
+
+  &-menu a {
+    padding-left: 1rem;
+    display: block;
+    color: $pure-white;
+    font-size: 1.1rem;
+  }
+
+  &-menu a.active {
+    background: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: $main;
+    border-radius: 30px 0px 0px 30px;
+  }
+
+  &-menu a span:first-child {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+  }
+}
+
+#nav-toggle:checked {
+  + .sidebar {
+    width: 70px;
+
+    & .sidebar-brand {
+      padding-left: 1rem;
+      text-align: center;
+    }
+
+    & li {
+      padding-left: 1rem;
+      text-align: center;
+
+      & a {
+        padding-left: 0rem;
+      }
+    }
+
+    & .sidebar-brand h2 span:last-child,
+    & li a span:last-child {
+      display: none;
+    }
+  }
+
+  & ~ .main-content {
+    margin-left: 70px;
+
+    & header {
+      width: calc(100% - 70px);
+      left: 70px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<input type="checkbox" id="nav-toggle">
+<div class="sidebar">
+    <div class="sidebar-brand">
+        <h2>
+            <span class="lab la-accusoft"></span>
+            <span>Dashboard</span>
+        </h2>
+    </div>
+
+    <div class="sidebar-menu">
+        <ul>
+            <% siderItemList.forEach(function(siderItem) { %>
+                <li>
+                    <% if(active === siderItem.name){ %>
+                        <a href="<%= siderItem.link %>" class="active">
+                            <% } else { %>
+                                <a href="<%= siderItem.link %>">
+                                    <% } %>
+                                        <span class="las <%= siderItem.icon %>"></span>
+                                        <span>
+                                            <%= siderItem.name %>
+                                        </span>
+                                </a>
+                </li>
+                <% }) %>
+        </ul>
+    </div>
+</div>
