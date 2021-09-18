@@ -1,0 +1,131 @@
+.icon {
+  &-template {
+    display: inline-block;
+    background-image: url("../../../icon/layout.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+  }
+
+  &-menu {
+    display: inline-block;
+    background-image: url("../../../icon/menu-button-of-three-horizontal-lines.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+  }
+
+  &-search {
+    display: inline-block;
+    background-image: url("../../../icon/search.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+  }
+
+  &-customers {
+    display: inline-block;
+    background-image: url("../../../icon/customer.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 48px;
+    height: 48px;
+  }
+
+  &-projects {
+    display: inline-block;
+    background-image: url("../../../icon/projects.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 48px;
+    height: 48px;
+  }
+
+  &-shopping-bag {
+    display: inline-block;
+    background-image: url("../../../icon/shopping-bag.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 48px;
+    height: 48px;
+  }
+
+  &-wallet {
+    display: inline-block;
+    background-image: url("../../../icon/wallet.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 48px;
+    height: 48px;
+  }
+
+  &-arrow-right {
+    display: inline-block;
+    background-image: url("../../../icon/right.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 14px;
+  }
+
+  &-user-circle {
+    display: inline-block;
+    background-image: url("../../../icon/user_bold.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+  }
+
+  &-message {
+    display: inline-block;
+    background-image: url("../../../icon/conversation.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+  }
+
+  &-phone {
+    display: inline-block;
+    background-image: url("../../../icon/telephone.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+  }
+
+  &-home {
+    display: inline-block;
+    background-image: url("../../../icon/home.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+  }
+
+  &-day-n-night {
+    display: inline-block;
+    background-image: url("../../../icon/day-and-night.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+  }
+}
