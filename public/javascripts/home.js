@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var modeSwitch = document.querySelector(".mode-switch");
+  const modeSwitch = document.querySelector(".mode-switch");
 
   modeSwitch.addEventListener("click", function () {
     document.documentElement.classList.toggle("dark");
     modeSwitch.classList.toggle("active");
   });
 
-  var listView = document.querySelector(".list-view");
-  var gridView = document.querySelector(".grid-view");
-  var projectsList = document.querySelector(".project-boxes");
+  const listView = document.querySelector(".list-view");
+  const gridView = document.querySelector(".grid-view");
+  const projectsList = document.querySelector(".project-boxes");
 
   listView.addEventListener("click", function () {
     gridView.classList.remove("active");

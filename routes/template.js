@@ -37,15 +37,18 @@ router.get("/:routerId", function (req, res, next) {
   const templateview = activeData[0]?.templateview;
   const metatag = activeData[0]?.metatag;
 
-  res.render("template", {
-    title: active,
-    active,
-    siderItemList,
-    cssstyle,
-    metatag,
-    templateview,
-  });
+  if (activeData.length > 0) {
+    res.render("template", {
+      title: active,
+      active,
+      siderItemList,
+      cssstyle,
+      metatag,
+      templateview,
+    });
+  } else {
+    res.render("error");
+  }
 });
-
 
 module.exports = router;

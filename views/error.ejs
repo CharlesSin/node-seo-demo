@@ -1,3 +1,25 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../stylesheets/css/404.css">
+    <title>404 Error Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Hmmm...</h2>
+        <p>It looks like you're lost...</p>
+        <p>That's a trouble?</p>
+        <a href="/" type="button" class="btn">Go Back</a>
+    </div>
+
+    <script>
+        window.setInterval(() => {window.location.href = "/"}, 3000)
+    </script>
+</body>
+
+</html>

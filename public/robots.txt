@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://node-ssr-seo.herokuapp.com/sitemap.xml
