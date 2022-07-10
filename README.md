@@ -29,11 +29,11 @@ Project is created with:
 To run this project, install it locally using npm:
 
 ```
-$ git clone https://github.com/CharlesSin/Notes.git
-$ cd Notes
+$ git clone https://github.com/CharlesSin/node-seo-demo.git
+$ cd node-seo-demo
 $ npm install
-$ npm run dev
+$ npm start
 ```
 
 ## Screenshot
-![alt text](https://github.com/CharlesSin/Notes/blob/main/public/screenshot.jpg)
+![alt text](https://github.com/CharlesSin/node-seo-demo/blob/main/public/screenshot.jpg)
