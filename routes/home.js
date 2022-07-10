@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const templateJson = require("./template.json");
+const templateJson = require("../mock/template.json");
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
@@ -22,7 +22,7 @@ router.get("/", function (req, res, next) {
   });
 });
 
-router.get("/:routerId", function (req, res, next) {
+router.get("/dashboard/:routerId", function (req, res, next) {
   let routerId = req.params?.routerId;
 
   const siderItemList = templateJson.template;

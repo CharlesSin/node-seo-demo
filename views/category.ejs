@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eugene Yiew Article</title>
+    <link rel="stylesheet" href="../../stylesheets/css/category.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar-secondary text-white justify-between">
+        <div class="container">
+            <h1 class="site-title">Eugene Yiew Article</h1>
+        </div>
+    </nav>
+
+    <!-- work section -->
+    <section id="work" class="mt-5">
+        <div class="container">
+            <h2 class="mb-2"></h2>
+            <div class="row gap-2">
+                <% bookmarks.forEach(function(bookmark){ %>
+                    <% if (bookmark.linkTitle && bookmark.linkTitle !="Facebook" ) { %>
+                        <div class="col-12-xs col-6-md col-3-lg">
+                            <div class="card p-0">
+                                <h3 class="card-title m-1">
+                                    <%= bookmark.linkTitle %>
+                                        <span style="display:none;" class="badge-orange text-white ml-1">new</span>
+                                </h3>
+                                <img style="display:none;" src="/img/mario.png" alt="">
+                                <p style="display:none;" class="m-1">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Totam, hic!
+                                </p>
+                                <div class="row justify-center mt-2 mb-2">
+                                    <a href="<%= bookmark.linkurl %>" class="btn-secondary text-white font-md"
+                                        target="_blank">
+                                        View All
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    <% } %>
+                <% }); %>
+            </div>
+        </div>
+    </section>
+
+    <article style="display: none;" class="Home_container__bCOhY" itemscope="" itemtype="http://schema.org/Article">
+        <section class="Home_bookmark_list__umKOH" itemprop="articleBody">
+            <a class="Home_bookmark_list_container__U3Jpw"
+                href="https://www.freecodecamp.org/news/how-to-learn-javascript-faster/"
+                title="How to Learn JavaScript Faster – Tips and Resources to Get Started Coding JS" target="_blank">
+                <h2 class="Home_bookmark_text__8kx6A">
+                    How to Learn JavaScript Faster – Tips and Resources to Get Started
+                    Coding JS
+                </h2>
+                <h3 class="Home_bookmark_text__8kx6A">
+                    JavaScript is a programming language commonly used for web
+                    development, among many other things. It works in conjunction with HTML and CSS to add dynamic
+                    functionality to websites. About 97% of the websites in the world use JavaScript – so you can see
+                    that
+                    it's a popular and widely-used language.
+                </h3>
+            </a>
+        </section>
+    </article>
+</body>
+
+</html>
