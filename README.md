@@ -36,4 +36,4 @@ $ npm start
 ```
 
 ## Screenshot
-![alt text](https://github.com/CharlesSin/node-seo-demo/blob/main/public/screenshot.jpg)
+![alt text](https://github.com/CharlesSin/node-seo-demo/blob/master/public/screenshot.jpg)
